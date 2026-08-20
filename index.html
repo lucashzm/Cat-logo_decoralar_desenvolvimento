@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Bia Moveis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+  </head>
+
+
+  <body>
+
+
+    <header class="cabecalho">
+
+      <div class="informacoes">
+
+        <h1>
+          <span>Móveis que</span>
+          <span>Transformam</span>
+        </h1>
+
+        <p class="subtitulo">
+          Qualidade, conforto e estilo para o seu lar.
+        </p>
+
+        <div class="destaques">
+          <div>🚚 <span>Entrega rápida</span></div>
+          <div>🏷️ <span>Preço de atacado</span></div>
+        </div>
+
+      </div>
+
+
+      <div class="logo">
+
+        <img
+          src="imagens/Decoralar.png"
+          alt="Decoralar"
+        >
+
+      </div>
+
+    </header>
+
+
+
+    <section class="catalogo">
+
+      <h2>Catálogo de Móveis</h2>
+
+<!-- BUSCA -->
+
+<div class="busca-produtos">
+
+  <i class="fa-solid fa-magnifying-glass"></i>
+
+  <input
+    type="text"
+    id="campo-busca"
+    placeholder="Pesquisar por nome do produto..."
+    autocomplete="off"
+  >
+
+</div>
+
+<!-- FILTROS -->
+
+
+      <!-- FILTROS -->
+
+      <div class="filtros">
+
+        <button class="filtro ativo">Todos</button>
+        <button class="filtro">Sofás</button>
+        <button class="filtro">Roupeiros</button>
+        <button class="filtro">Cômodas</button>
+        <button class="filtro">Cozinhas</button>
+        <button class="filtro">Mesas</button>
+        <button class="filtro">Painéis/Racks</button>
+        <button class="filtro">Camas/Colchões/Box</button>
+
+      </div>
+
+
+
+      <!-- PRODUTOS -->
+
+      <div id="lista-produtos"></div>
+
+      <div id="paginacao"></div>
+
+    </section>
+
+
+
+    <!-- JANELA DE DETALHES DO PRODUTO -->
+
+    <div id="modal-produto" class="modal-produto">
+
+      <div class="modal-conteudo">
+
+        <button
+          id="fechar-modal"
+          class="fechar-modal"
+        >
+          &times;
+        </button>
+
+
+        <h2 id="modal-nome"></h2>
+
+
+        <div class="galeria-produto">
+
+          <img
+            id="modal-imagem"
+            src=""
+            alt=""
+          >
+
+          <div
+            id="modal-miniaturas"
+            class="modal-miniaturas"
+          ></div>
+
+        </div>
+
+
+        <p id="modal-descricao"></p>
+
+        <p id="modal-preco"></p>
+
+
+        <a
+          id="modal-whatsapp"
+          class="botao-whatsapp"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+          Tenho interesse
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+
+      <div class="rodape-conteudo">
+
+        <h3>DECORALAR</h3>
+
+        <p>CNPJ: 59.501.060/0001-30</p>
+
+        <p>
+          Avenida do Catarinense, 72 – Campo Grande<br>
+          Rio de Janeiro – RJ | CEP: 23097-115
+        </p>
+
+        <p>
+          WhatsApp: (21) 12345-6789
+          &nbsp;•&nbsp;
+          E-mail: teste@gmail.com
+        </p>
+
+        <p class="copyright">
+          © 2026 Decoralar — Todos os direitos reservados.
+        </p>
+
+      </div>
+
+    </footer>
+
+
+
+    <script src="produtos.js"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
