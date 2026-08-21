@@ -58,14 +58,20 @@ h1 span:last-child {
   display: flex;
   gap: 35px;
   margin-top: 25px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
   color: #222;
 }
 
 .destaques div {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 9px;
+  transition: transform 0.2s ease;
+}
+
+.destaques div:hover {
+  transform: translateY(-2px);
 }
 
 /* =========================
