@@ -70,6 +70,10 @@ h1 span:last-child {
   transition: transform 0.2s ease;
 }
 
+.destaques i {
+  font-size: 20px;
+}
+
 .destaques div:hover {
   transform: translateY(-2px);
 }
